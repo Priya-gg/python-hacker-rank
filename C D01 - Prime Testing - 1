@@ -1,0 +1,15 @@
+n=int(input())
+
+if n > 1:
+  
+   for i in range(2,n):
+       if (n % i) == 0 and n % 2!=1:
+           print("no")
+           
+           break
+   else:
+       print("yes")
+       
+
+else:
+   print("no")
