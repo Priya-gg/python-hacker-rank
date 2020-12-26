@@ -1,0 +1,7 @@
+a,b = input().split()
+if a == b:
+    print("Did not participate")
+elif a < b:
+    print("Performed well")
+elif a > b:
+    print("Did not perform well")
