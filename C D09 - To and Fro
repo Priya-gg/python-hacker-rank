@@ -1,0 +1,15 @@
+n=int(input())
+a=[]
+while(n>0):
+    f,b,t,d=map(int,input().split(" "))
+    x=y=0
+    while(d-b>0):
+        x=b-f
+        d-=x
+        y+=(b+f)
+    y+=d
+    n-=1
+    a.append(y*t)
+for i in a:
+    print(i)
+        
