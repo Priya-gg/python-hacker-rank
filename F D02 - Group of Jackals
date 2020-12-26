@@ -1,0 +1,16 @@
+
+import sys
+def LeaderSum(a):
+    j=0
+    for i in range(len(a)-1):
+        c=max(a[i+1:n])
+        if(a[i]>c):
+            j=j+a[i]
+            
+    j=j+a[-1]
+    return j
+
+n = int(input().strip())
+a = list(map(int, input().strip().split(' ')))
+result = LeaderSum(a)
+print(result)
