@@ -1,0 +1,10 @@
+n,c,m=list(map(int,input().split()))
+
+a =[int(i)for i in input().split()]
+if m*c>=max(a):
+
+    print("Yes")
+
+else:
+
+    print("No")
