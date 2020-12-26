@@ -1,0 +1,26 @@
+n = int(input())
+largest = 0
+number =[]
+for i in range(n):
+    number.append(int(input()))
+    if(largest < number[i]):
+        largest = number[i]
+data =[]
+for i in range(largest + 1):
+    data.append(0)
+    
+data[0]=1
+data[1]=1
+
+for i in range(2 , largest  +1):
+    if(data[i] == 0):
+        j=i+i
+        while(j<=largest):
+            data[j]=1
+            j=j+i
+            
+for i in range(n):
+    if(data[number[i]]==0):
+        print("yes")
+    else:
+        print("no")
