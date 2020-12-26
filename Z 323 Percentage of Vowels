@@ -1,0 +1,12 @@
+def Check_V(string, vowels): 
+    final = [each for each in string if each in vowels] 
+    v= len(final)
+    total = [each for each in string]
+    tot = len(total)
+    
+    ans = (v/tot)*100.0000
+    print('%.4f'%ans)
+
+string = input()
+vowels = "AaEeIiOoUu"
+Check_V(string, vowels); 
