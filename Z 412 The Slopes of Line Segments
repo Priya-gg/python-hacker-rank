@@ -1,0 +1,13 @@
+import math
+X1,Y1,X2,Y2=list(map(int,(input().split())))
+X3,Y3,X4,Y4=list(map(int,(input().split())))
+if X2-X1==0 or X4-X3==0:
+    print("no")
+else:
+    s1=float(Y2-Y1)//float(X2-X1)
+    s2=float(Y4-Y3)//float(X4-X3)
+
+    if s1 == s2:
+        print("yes")
+    else:
+        print("no")
