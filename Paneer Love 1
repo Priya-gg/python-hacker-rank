@@ -1,0 +1,24 @@
+no_of_days=int(input())
+amt_of_paneer=[]
+cost_of_paneer=[]
+for i in range(no_of_days):
+    ax,px=input().split()
+    amt_of_paneer.append(int(ax))
+    cost_of_paneer.append(int(px))
+i=0
+cost=0
+while(i<no_of_days):
+    b=cost_of_paneer[i]
+    pos=i+1
+    eat=amt_of_paneer[i]
+    for j in range(i+1,no_of_days):
+        if(cost_of_paneer[j]<cost_of_paneer [i]):
+            pos=j
+            break
+        else:
+            eat+=amt_of_paneer[j]
+    else:
+        pos=no_of_days
+    cost=cost+cost_of_paneer[i]*eat
+    i=pos
+print(cost
