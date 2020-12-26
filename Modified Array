@@ -1,0 +1,8 @@
+n=int(input())
+arr=input()
+a=list(map(int,arr.split(" ")))
+for i in range (len(a)):
+    if ((i%2==0)):
+        print(int(a[i])*2,end=" ")
+    else:
+        print(int(a[i])//2,end=" ")
