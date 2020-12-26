@@ -1,0 +1,9 @@
+import math
+import os
+import random
+import sys
+import re
+
+r= float(input())
+area=math.pi*r*r
+print("{0:.6f}".format(area))
